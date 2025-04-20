@@ -1,0 +1,148 @@
+{% extends 'main/base.html' %}
+{% load static i18n %}
+{% block title %}About - Shiksha Ki Kiran{% endblock %}
+
+{% block body %}
+<style>
+    /* Animation for fade-in */
+    .fade-in {
+        opacity: 0;
+        animation: fadeIn 1.5s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Hover Effect for Cards */
+    .card-hover:hover {
+        transform: translateY(-12px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Section Heading Style */
+    .section-heading {
+        font-size: 2.6rem;
+        font-weight: 700;
+        color: #2d3e50;
+    }
+
+    /* Body Text Styling */
+    .fs-5 {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        color: #495057;
+    }
+
+    /* Card Styling */
+    .card {
+        border: none;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #343a40;
+    }
+
+    .card-text {
+        font-size: 1.1rem;
+        color: #6c757d;
+    }
+
+    /* Background Colors for Sections */
+    .bg-primary-section {
+        background-color: #f1f8ff;
+    }
+
+    /* Button Styling */
+    .btn-custom {
+        background-color: #007bff;
+        color: white;
+        font-size: 1.1rem;
+        padding: 0.6rem 1.5rem;
+        border-radius: 30px;
+        transition: all 0.3s;
+    }
+
+    .btn-custom:hover {
+        background-color: #0056b3;
+        text-decoration: none;
+    }
+</style>
+
+<section class="py-5 bg-primary-section" style="margin-top: 90px;">
+    <div class="container fade-in">
+        <!-- About Developer -->
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-12 text-center">
+                <h2 class="text-primary section-heading mb-3">Meet the Creator</h2>
+                <p class="fs-5">I'm <strong>Rehan Alam</strong> from <strong>Nepal</strong>, a passionate Full Stack Developer and final-year B.Tech CSE student at <strong>Lovely Professional University</strong>.</p>
+                <p class="fs-5">I believe in leveraging technology for social impact. This project is my small step to empower rural learners with modern educational tools.</p>
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-star-fill text-warning me-2"></i>Full Stack Enthusiast</li>
+                    <li><i class="bi bi-star-fill text-warning me-2"></i>Django, React & API Developer</li>
+                    <li><i class="bi bi-star-fill text-warning me-2"></i>Focused on Real-World Impact</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Project Overview -->
+        <div class="text-center mb-5">
+            <h2 class="text-primary section-heading">Project Highlights</h2>
+            <p class="fs-5">"Shiksha Ki Kiran" is an EdTech solution to illuminate the path of learning in underserved rural areas using digital tools, online resources, and local engagement.</p>
+        </div>
+
+        <!-- Project Cards -->
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="card card-hover shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" 
+                         class="card-img-top" alt="Remote Learning">
+                    <div class="card-body">
+                        <h5 class="card-title">Remote Learning</h5>
+                        <p class="card-text">Delivering online lessons and interactive quizzes to bridge the education gap in villages.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card card-hover shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=800&q=80" 
+                         class="card-img-top" alt="Community Support">
+                    <div class="card-body">
+                        <h5 class="card-title">Community Engagement</h5>
+                        <p class="card-text">Enabling local volunteers and educators to contribute to rural learning ecosystems.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card card-hover shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" 
+                         class="card-img-top" alt="Tech for Good">
+                    <div class="card-body">
+                        <h5 class="card-title">Tech for Good</h5>
+                        <p class="card-text">Harnessing the power of Django, APIs, and UI/UX to make education accessible and engaging.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action Section -->
+        <div class="text-center mt-5">
+            <a href="#" class="btn btn-custom">Learn More About the Project</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends 'main/base.html' %}
+{% load static i18n %}
+{% block title %}Missions - Shiksha Ki Kiran{% endblock %}
+
+{% block body %}
+<style>
+    .fade-in {
+        opacity: 0;
+        animation: fadeIn 1.5s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+    }
+
+    .section-heading {
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #007bff; /* Bootstrap primary color */
+    }
+
+    .mission-text {
+        font-size: 1.2rem;
+        color: #495057; /* Darker text color */
+        margin-bottom: 20px;
+    }
+
+    .py-5 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+</style>
+
+<section class="py-5" style="margin-top: 90px;">
+    <div class="container fade-in">
+        <div class="text-center mb-5">
+            <h2 class="text-primary section-heading">Our Mission</h2>
+            <p class="mission-text">
+                At <strong>Shiksha Ki Kiran</strong>, our mission is to empower rural learners by providing access to quality education through innovative digital tools and community engagement. We aim to bridge the educational gap in underserved areas and foster a culture of learning and growth.
+            </p>
+            <p class="mission-text">
+                We believe that education is a fundamental right, and we are committed to creating inclusive and accessible learning environments that inspire and uplift every learner.
+            </p>
+        </div>
+
+        <div class="text-center mb-5">
+            <h2 class="text-primary section-heading">Our Goals</h2>
+            <ul class="list-unstyled">
+                <li class="mission-text"><i class="bi bi-check-circle text-success me-2"></i>Provide digital resources and tools for effective learning.</li>
+                <li class="mission-text"><i class="bi bi-check-circle text-success me-2"></i>Engage local communities in the educational process.</li>
+                <li class="mission-text"><i class="bi bi-check-circle text-success me-2"></i>Foster collaboration between educators, students, and volunteers.</li>
+                <li class="mission-text"><i class="bi bi-check-circle text-success me-2"></i>Promote lifelong learning and skill development.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}

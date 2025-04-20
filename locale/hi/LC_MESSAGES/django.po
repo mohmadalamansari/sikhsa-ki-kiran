@@ -1,0 +1,644 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-13 21:41+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\agriculture\templates\agriculture\agriculture_detail.html:4
+#: .\agriculture\templates\agriculture\agriculture_list.html:5
+#: .\agriculture\templates\agriculture\index.html:5
+#: .\agriculture\templates\agriculture\index.html:9
+#: .\agriculture\templates\agriculture\training_list.html:4
+#: .\main\templates\main\base.html:53 .\main\templates\main\index.html:33
+#: .\main\templates\main\index.html:100
+msgid "Agriculture"
+msgstr "कृषि"
+
+#: .\agriculture\templates\agriculture\agriculture_list.html:64
+#: .\agriculture\templates\agriculture\index.html:22
+#: .\agriculture\templates\agriculture\index.html:32
+#: .\education\templates\education\education.html:119
+#: .\education\templates\education\topic_list.html:33
+#: .\government\templates\government\government.html:72
+#: .\main\templates\main\index.html:91 .\main\templates\main\index.html:102
+#: .\main\templates\main\index.html:115 .\main\templates\main\index.html:125
+#: .\main\templates\main\index.html:138
+msgid "Click Here"
+msgstr "यहां क्लिक करे"
+
+#: .\agriculture\templates\agriculture\index.html:10
+msgid ""
+"Agriculture is the most healthful, most useful, and most nobel employment of "
+"man."
+msgstr "कृषि मनुष्य का सबसे स्वास्थ्यप्रद, सबसे उपयोगी और सबसे अच्छा रोजगार है।"
+
+#: .\agriculture\templates\agriculture\index.html:21
+msgid "Training Videos"
+msgstr "प्रशिक्षण वीडियो"
+
+#: .\agriculture\templates\agriculture\index.html:31
+msgid "Agriculture Related Schemes"
+msgstr "कृषि संबंधित योजनाएँ"
+
+#: .\agriculture\templates\agriculture\index.html:45
+msgid "Request For Help"
+msgstr "सहायता के लिए आग्रह"
+
+#: .\agriculture\templates\agriculture\index.html:49
+msgid "Request"
+msgstr "निवेदन"
+
+#: .\agriculture\templates\agriculture\training_list.html:27
+msgid "Topics are:"
+msgstr "विषय हैं:"
+
+#: .\education\templates\education\education.html:5
+#: .\education\templates\education\topic_list.html:4
+#: .\education\templates\education\video_list.html:4
+#: .\main\templates\main\base.html:51 .\main\templates\main\index.html:26
+#: .\main\templates\main\index.html:89
+msgid "Education"
+msgstr "शिक्षा"
+
+#: .\education\templates\education\education.html:59
+msgid "What will you create?"
+msgstr "तुम क्या पैदा करोगे?"
+
+#: .\education\templates\education\education.html:60
+msgid "Start Learning"
+msgstr "डिजिटल लर्निंग"
+
+#: .\education\templates\education\education.html:63
+msgid "Watch The Video"
+msgstr "वीडियो देखना"
+
+#: .\education\templates\education\education.html:82
+msgid "We're making a difference"
+msgstr "हम फर्क कर रहे हैं"
+
+#: .\education\templates\education\education.html:86
+msgid "833M"
+msgstr "83करोड़"
+
+#: .\education\templates\education\education.html:87
+msgid "is the total rural population of India."
+msgstr "भारत की कुल ग्रामीण आबादी है।"
+
+#: .\education\templates\education\education.html:90
+msgid "635M"
+msgstr "63करोड़"
+
+#: .\education\templates\education\education.html:91
+msgid "of our students belongs to rural areas."
+msgstr "हमारे छात्रों का संबंध ग्रामीण क्षेत्रों से है।"
+
+#: .\education\templates\education\education.html:95
+msgid "students of rural areas dont know how to operate computers."
+msgstr "ग्रामीण क्षेत्रों के छात्र कंप्यूटर चलाना नहीं जानते।"
+
+#: .\education\templates\education\education.html:101
+msgid "Courses"
+msgstr "पाठ्यक्रम"
+
+#: .\government\templates\government\government.html:5
+#: .\main\templates\main\base.html:57 .\main\templates\main\index.html:47
+#: .\main\templates\main\index.html:123
+msgid "Government Schemes"
+msgstr "सरकारी योजनाएं"
+
+#: .\main\templates\main\about.html:3
+msgid "About Page"
+msgstr "हमारे बारे में"
+
+#: .\main\templates\main\about.html:6 .\main\templates\main\base.html:148
+msgid "About Us"
+msgstr "हमारे बारे में"
+
+#: .\main\templates\main\about.html:8
+#, fuzzy
+#| msgid "Hey!! I am <b>Tech Titans</b> of Hindu College of Engineering, SNP"
+msgid "Hey!! We are <b>Tech Titans</b> of Hindu College of Engineering, SNP"
+msgstr "मैं सोनीपत के हिंदू कॉलेज ऑफ इंजीनियरिंग का टेक टाइटन हूं।"
+
+#: .\main\templates\main\about.html:9
+#, fuzzy
+#| msgid ""
+#| "By this website I am trying to produce one stop solutions to all the "
+#| "problems of villlages which are affecting economyy, literacy, etc."
+msgid ""
+"By this website we are trying to produce one stop solutions to all the "
+"problems of villlages which are affecting economyy, literacy, etc."
+msgstr ""
+"इस वेबसाइट के द्वारा मैं उन सभी समस्याओं का समाधान करने का प्रयास कर रहा हूं, जो "
+"अर्थव्यवस्था, साक्षरता आदि को प्रभावित कर रही हैं।"
+
+#: .\main\templates\main\about.html:11
+#, fuzzy
+#| msgid "Devashish Rathee (Frontend and Backend Developer)"
+msgid "Rohit Rana (Backend Developer)"
+msgstr "रोहित राणा (बैकएंड डेवलपर)"
+
+#: .\main\templates\main\about.html:12
+msgid "Karan Chugh (Web Designer)"
+msgstr "करण चुघ (वेब ​​डिज़ाइनर)"
+
+#: .\main\templates\main\about.html:13
+msgid "Aman Malik (Content Writer)"
+msgstr "अरमान मलिक (सामग्री लेखक)"
+
+#: .\main\templates\main\base.html:25 .\main\templates\main\base.html:139
+#: .\users\templates\users\base.html:22 .\users\templates\users\base.html:30
+msgid "Shiksha Ki Kiran"
+msgstr "शिक्षा की किरण"
+
+#: .\main\templates\main\base.html:44
+msgid "Home"
+msgstr "होम"
+
+#: .\main\templates\main\base.html:48
+msgid "Services"
+msgstr "हमारी सेवाएं"
+
+#: .\main\templates\main\base.html:55 .\main\templates\main\index.html:40
+#: .\main\templates\main\index.html:113
+#: .\weather\templates\weather\weather.html:25
+#: .\weather\templates\weather\weather.html:31
+msgid "Weather Forecast"
+msgstr "मौसम पूर्वानुमान"
+
+#: .\main\templates\main\base.html:59
+#: .\moneytransfer\templates\moneytransfer\index.html:5
+msgid "Money Transfer"
+msgstr "मनी ट्रांसफर"
+
+#: .\main\templates\main\base.html:63
+msgid "Missions"
+msgstr "विशेष कार्य"
+
+#: .\main\templates\main\base.html:66
+msgid "About"
+msgstr "हमारे बारे में"
+
+#: .\main\templates\main\base.html:87
+msgid "Submit"
+msgstr "जमा करें"
+
+#: .\main\templates\main\base.html:96 .\users\templates\users\profile.html:4
+msgid "Profile"
+msgstr "प्रोफाइल"
+
+#: .\main\templates\main\base.html:98
+msgid "Logout"
+msgstr "लोग आउट"
+
+#: .\main\templates\main\base.html:100
+msgid "Login"
+msgstr "लॉगिन"
+
+#: .\main\templates\main\base.html:102 .\users\templates\users\login.html:33
+msgid "Register"
+msgstr "पंजीकरण"
+
+#: .\main\templates\main\base.html:130
+msgid "Shiksha ki kiran QR Code."
+msgstr "शिक्षा की किरण क्यूआर कोड"
+
+#: .\main\templates\main\base.html:140
+msgid ""
+"This project is a non-profitable initiative under government / non-"
+"government. The income and property is not distributable to its "
+"incorporators, members, director, officers, or person relating to any of "
+"them."
+msgstr ""
+"यह परियोजना सरकारी / गैर-सरकारी के तहत एक गैर-लाभकारी पहल है। आय और संपत्ति अपने "
+"निगमनकर्ताओंसदस्यों, निदेशक, अधिकारियों या उनमें से किसी से संबंधित व्यक्ति के लिए वितरित "
+"करने योग्य नहीं है।"
+
+#: .\main\templates\main\base.html:141
+msgid "All rights reserved."
+msgstr "सर्वाधिकार सुरक्षित।"
+
+#: .\main\templates\main\base.html:146
+msgid "Information"
+msgstr "जानकारी"
+
+#: .\main\templates\main\base.html:149
+#: .\main\templates\main\issues_addressed.html:3
+msgid "Issues Being Addressed"
+msgstr "जिन मुद्दों पर ध्यान दिया गया"
+
+#: .\main\templates\main\base.html:150 .\main\templates\main\solution.html:3
+#: .\main\templates\main\solution.html:6
+msgid "Solution"
+msgstr "उपाय"
+
+#: .\main\templates\main\base.html:151
+msgid "Prospective Impact"
+msgstr "भावी प्रभाव"
+
+#: .\main\templates\main\base.html:152 .\main\templates\main\terms.html:3
+msgid "Terms of Service"
+msgstr "सेवाओं की शर्तें"
+
+#: .\main\templates\main\index.html:27
+msgid "Awareness about digital world."
+msgstr "डिजिटल दुनिया के बारे में जागरूकता।"
+
+#: .\main\templates\main\index.html:34
+msgid "Offering farmers easier techniques of crop enhancement."
+msgstr "किसानों को सर्वोत्तम फसल वृद्धि तकनीक प्रदान करना।"
+
+#: .\main\templates\main\index.html:41
+msgid "Delivering accurate weather conditions using INSAT(by ISRO)"
+msgstr "INSAT (ISRO द्वारा) का उपयोग करते हुए सटीक मौसम की स्थिति वितरित करना"
+
+#: .\main\templates\main\index.html:48
+msgid "Making Govrenment schemes easily accessible."
+msgstr "गोवर्धन योजनाओं को आसानी से सुलभ बनाना।"
+
+#: .\main\templates\main\index.html:54 .\main\templates\main\index.html:136
+msgid "How to Transfer Money Online"
+msgstr "ऑनलाइन मनी ट्रांसफर कैसे करें"
+
+#: .\main\templates\main\index.html:55
+msgid "Go cashless."
+msgstr "कैशलेस हो जाओ।"
+
+#: .\main\templates\main\index.html:73
+msgid ""
+"Let us join this mass movement towards surajya, realise the hopes and "
+"aspirations of the people and take India to greater Height!"
+msgstr ""
+"आइए हम इस जन आंदोलन में शामिल हों सुराज की ओर, लोगों की आशाओं और आकांक्षाओं को महसूस करें "
+"और भारत को अधिक से अधिक ऊँचाई तक ले जाएँ!"
+
+#: .\main\templates\main\index.html:80
+msgid "Our Services"
+msgstr "हमारी सेवाएं"
+
+#: .\main\templates\main\index.html:90
+msgid "Welcome to the digital world."
+msgstr "डिजिटल दुनिया में आपका स्वागत है।"
+
+#: .\main\templates\main\index.html:101
+msgid "Preparing for Future."
+msgstr "भविष्य के लिए तैयारी कर रहा है।"
+
+#: .\main\templates\main\index.html:114
+msgid "Accurate Awareness - NO LOSS"
+msgstr "सटीक जागरूकता - कोई नुकसान नहीं"
+
+#: .\main\templates\main\index.html:124
+msgid "Go Fast Go Digital."
+msgstr "डिजिटल जाओ फास्ट जाओ।"
+
+#: .\main\templates\main\index.html:137
+msgid "Money transfer on your tips."
+msgstr "मनी ट्रांसफर आपके सुझावों पर"
+
+#: .\main\templates\main\index.html:147
+msgid "Our Missions"
+msgstr "हमारे मिशन"
+
+#: .\main\templates\main\index.html:153
+msgid ""
+"Our motto is to generate<br> &#10078;Panacea for all the troubles which are "
+"causing hindrances in the growth of India&#10078;."
+msgstr ""
+"हमारा मकसद <br> &#10078;भारत के विकास में बाधा उत्पन्न करने वाली सभी परेशानियों के "
+"लिए रामबाण है।&#10078;"
+
+#: .\main\templates\main\index.html:158
+msgid ""
+"As we all know, nearly 70&#37; of India's population lives in rural areas. "
+"So, by targeting this hefty portion of population we can increase the growth "
+"of India expeditiously."
+msgstr ""
+"जैसा कि हम सभी जानते हैं कि भारत की लगभग 70% आबादी ग्रामीण क्षेत्रों में रहती है। इसलिए, "
+"जनसंख्या के इस विषमहिस्से को लक्षित करके हम भारत के विकास को तेजी से बढ़ा सकते हैं।"
+
+#: .\main\templates\main\index.html:164
+msgid ""
+"SHIKSHA KI KIRAN will light up the path for evolving India into a developed "
+"country"
+msgstr "शिक्षा की किरण भारत के विकाश मार्ग पर प्रकाश डालेगा"
+
+#: .\main\templates\main\issues_addressed.html:6
+msgid "Issues being addressed"
+msgstr "जिन मुद्दों पर ध्यान दिया गया"
+
+#: .\main\templates\main\issues_addressed.html:9
+msgid "Lack of Digital Knowledge"
+msgstr "डिजिटल ज्ञान का अभाव"
+
+#: .\main\templates\main\issues_addressed.html:10
+msgid ""
+"Farmers have less easier & portable ways to access or use various schemes "
+"for them"
+msgstr ""
+"किसानों के पास उनके लिए विभिन्न योजनाओं तक पहुंचने या उनका उपयोग करने के लिए कम आसान "
+"और पोर्टेबलतरीके हैं"
+
+#: .\main\templates\main\issues_addressed.html:11
+msgid ""
+"Every year a lot of crops is spoiled due to late or inaccurate weather "
+"information"
+msgstr "हर साल बहुत सारी फ़सलें देर से या गलत मौसम की जानकारी के कारण खराब हो जाती हैं"
+
+#: .\main\templates\main\issues_addressed.html:12
+msgid ""
+"Citizens with less knowledge or resources, waste a lot of time in queues to "
+"access or apply for any government schemes"
+msgstr ""
+"कम ज्ञान या संसाधनों वाले नागरिक, किसी भी सरकारी योजनाओं के लिए उपयोग या आवेदन करने "
+"के लिए कतारों मेंबहुत समय बर्बाद करते हैं"
+
+#: .\main\templates\main\prospective.html:3
+msgid "Prospetive"
+msgstr "भावी प्रभाव"
+
+#: .\main\templates\main\solution.html:9
+msgid ""
+"Providing digital interface to the students, initially, and later on to the "
+"rest of the people"
+msgstr "छात्रों को शुरू में और बाद में बाकी लोगों को डिजिटल इंटरफेस प्रदान करना"
+
+#: .\main\templates\main\solution.html:10
+msgid "Providing farmers easier techniques of crop enhancement"
+msgstr "किसानों को सर्वोत्तम फसल वृद्धि तकनीक प्रदान करना।"
+
+#: .\main\templates\main\solution.html:11
+msgid ""
+"Pre-alerting farmer with more advanced & accurate weather conditions with "
+"the help of INSAT(by ISRO)"
+msgstr "सटीक मौसम की स्थिति वाले किसानों को पूर्व-सचेत करना।"
+
+#: .\main\templates\main\solution.html:12
+msgid ""
+"Helping every individual to easily access & apply for Government shcemes"
+msgstr ""
+"सरकारी योजनाओं के लिए आसानी से उपयोग और आवेदन करने के लिए हर व्यक्ति की मदद करनाc"
+
+#: .\moneytransfer\templates\moneytransfer\checkout.html:6
+msgid "Card Details"
+msgstr "कार्ड के विवरण"
+
+#: .\moneytransfer\templates\moneytransfer\checkout.html:37
+msgid "Card number"
+msgstr "कार्ड नंबर"
+
+#: .\moneytransfer\templates\moneytransfer\checkout.html:44
+msgid "Full name"
+msgstr "पूरा नाम"
+
+#: .\moneytransfer\templates\moneytransfer\checkout.html:51
+msgid "MM/YY"
+msgstr "महीना/साल"
+
+#: .\moneytransfer\templates\moneytransfer\checkout.html:58
+msgid "CVC/CVV"
+msgstr "सीवीसी/सीवीवी"
+
+#: .\moneytransfer\templates\moneytransfer\checkout.html:62
+msgid "Checkout Now"
+msgstr "चेक आउट"
+
+#: .\moneytransfer\templates\moneytransfer\index.html:19
+msgid "Enter Receiver Account Details"
+msgstr "प्राप्तकर्ता खाता विवरण दर्ज करें"
+
+#: .\moneytransfer\templates\moneytransfer\index.html:31
+msgid "Amount"
+msgstr "रकम"
+
+#: .\moneytransfer\templates\moneytransfer\index.html:35
+msgid "IFSC Code"
+msgstr "IFSC कोड"
+
+#: .\moneytransfer\templates\moneytransfer\index.html:39
+msgid "Account number"
+msgstr "खाता संख्या"
+
+#: .\moneytransfer\templates\moneytransfer\index.html:43
+msgid "Confirm Account number"
+msgstr "खाता संख्या की पुष्टि करें"
+
+#: .\moneytransfer\templates\moneytransfer\index.html:47
+msgid "Account holder name"
+msgstr "खाताधारक का नाम"
+
+#: .\moneytransfer\templates\moneytransfer\index.html:51
+msgid "Phone Number (Optional)"
+msgstr "फ़ोन नंबर (वैकल्पिक)"
+
+#: .\moneytransfer\templates\moneytransfer\index.html:56
+msgid "Transfer Now"
+msgstr "अब स्थानांतरित करें"
+
+#: .\moneytransfer\templates\moneytransfer\success.html:4
+msgid "Success"
+msgstr "सफलता"
+
+#: .\moneytransfer\templates\moneytransfer\success.html:8
+msgid "Transaction has been processed successfully."
+msgstr "लेनदेन सफलतापूर्वक संसाधित किया गया है।"
+
+#: .\moneytransfer\templates\moneytransfer\success.html:14
+msgid "Your Transaction id : S980843"
+msgstr "आपकी लेन-देन आईडी: S980843"
+
+#: .\moneytransfer\templates\moneytransfer\success.html:15
+msgid "Click here"
+msgstr "यहां क्लिक करे"
+
+#: .\moneytransfer\templates\moneytransfer\success.html:15
+msgid "to print your Transaction Recepit."
+msgstr "अपने लेनदेन रसीद को मुद्रित करने के लिए।"
+
+#: .\moneytransfer\templates\moneytransfer\success.html:17
+msgid "Go to Homepage"
+msgstr "मुखपृष्ठ प्र जाएं"
+
+#: .\users\templates\users\base.html:51
+msgid ""
+"Shiksha Ki Kiran platform is designed, developed and mantained by TechTitans,"
+msgstr ""
+"शिक्षा की किरण प्लेटफॉर्म TechTitans द्वारा डिजाइन, विकसित और तैयार किया गया है,"
+
+#: .\users\templates\users\base.html:52
+msgid "Hindu College of Engineering, Sonipat"
+msgstr "हिंदू कॉलेज ऑफ इंजीनियरिंग, सोनीपत"
+
+#: .\users\templates\users\login.html:13 .\users\templates\users\login.html:21
+#: .\users\templates\users\login.html:24
+msgid "Log In"
+msgstr "लॉग इन करें"
+
+#: .\users\templates\users\login.html:26
+msgid "Forgot Password?"
+msgstr "पासवर्ड भूल गए?"
+
+#: .\users\templates\users\login.html:32
+msgid "Need an account?"
+msgstr "एक खाता चाहिए?"
+
+#: .\users\templates\users\logout.html:16
+msgid "Log Out"
+msgstr "लोग आउट"
+
+#: .\users\templates\users\logout.html:20
+msgid "You have been logged out !"
+msgstr "आप लॉग आउट हो चुके हों !"
+
+#: .\users\templates\users\logout.html:22
+msgid "Login Again !"
+msgstr "फिर से लॉगिन करें !"
+
+#: .\users\templates\users\password_reset.html:13
+#: .\users\templates\users\password_reset.html:19
+#: .\users\templates\users\password_reset_confirm.html:19
+#: .\users\templates\users\password_reset_confirm.html:23
+msgid "Reset Password"
+msgstr "पासवर्ड भूल गए?"
+
+#: .\users\templates\users\password_reset.html:23
+msgid "Request Password Reset"
+msgstr "पासवर्ड रीसेट का अनुरोध करें"
+
+#: .\users\templates\users\password_reset_complete.html:12
+msgid "Password Reset"
+msgstr "पासवर्ड रीसेट"
+
+#: .\users\templates\users\password_reset_complete.html:16
+msgid "Your password has been reset."
+msgstr "आपका पासवर्ड रिसेट कर दिया गया है।"
+
+#: .\users\templates\users\password_reset_complete.html:18
+#: .\users\templates\users\register.html:20
+msgid "Sign In"
+msgstr "दाखिल करना"
+
+#: .\users\templates\users\password_reset_confirm.html:13
+msgid "Confirm Email To Reset Password"
+msgstr "पासवर्ड रीसेट करने के लिए ईमेल की पुष्टि करें"
+
+#: .\users\templates\users\password_reset_done.html:12
+msgid "Password Reset Successful"
+msgstr "पासवर्ड रीसेट सफल"
+
+#: .\users\templates\users\password_reset_done.html:17
+msgid "An email has been sent with instructions to reset your password."
+msgstr "आपका पासवर्ड रीसेट करने के लिए निर्देशों के साथ एक ईमेल भेजा गया है।"
+
+#: .\users\templates\users\password_reset_done.html:19
+msgid "Go to Gmail."
+msgstr "जीमेल पर जाएं।"
+
+#: .\users\templates\users\profile.html:20
+msgid "Update Profile"
+msgstr "प्रोफ़ाइल अपडेट करें"
+
+#: .\users\templates\users\profile.html:23
+msgid "Update"
+msgstr "अपडेट करें"
+
+#: .\users\templates\users\register.html:4
+#: .\users\templates\users\register.html:14
+msgid "Sign Up"
+msgstr "साइन अप करें"
+
+#: .\users\templates\users\register.html:11
+msgid "Join Today"
+msgstr "आज ही जुड़िये"
+
+#: .\users\templates\users\register.html:19
+msgid "Already have an account?"
+msgstr "पहले से ही एक खाता है?"
+
+#: .\weather\templates\weather\weather.html:41
+msgid "Search"
+msgstr "खोज करो"
+
+#: .\weather\templates\weather\weather.html:87
+msgid "Temperature"
+msgstr "तापमान"
+
+#: .\weather\templates\weather\weather.html:92
+#: .\weather\templates\weather\weather.html:130
+#: .\weather\templates\weather\weather.html:171
+#: .\weather\templates\weather\weather.html:191
+#: .\weather\templates\weather\weather.html:211
+msgid "Description"
+msgstr "विवरण"
+
+#: .\weather\templates\weather\weather.html:94
+#: .\weather\templates\weather\weather.html:131
+#: .\weather\templates\weather\weather.html:172
+#: .\weather\templates\weather\weather.html:192
+#: .\weather\templates\weather\weather.html:212
+msgid "Pressure"
+msgstr "हवा का दबाव"
+
+#: .\weather\templates\weather\weather.html:97
+msgid "Wind"
+msgstr "हवा की गति"
+
+#: .\weather\templates\weather\weather.html:98
+msgid "Humidity"
+msgstr "हवा में नमी"
+
+#: .\weather\templates\weather\weather.html:99
+msgid "Cloud"
+msgstr "बादल का प्रतिशत"
+
+#: .\weather\templates\weather\weather.html:100
+msgid "Temp Max"
+msgstr "अधिकतम तापमान"
+
+#: .\weather\templates\weather\weather.html:114
+msgid "5-Day Weather Forecast"
+msgstr "5-दिन का मौसम पूर्वानुमान"
+
+#~ msgid "Hey!! we are "
+#~ msgstr "हम हैं"
+
+#~ msgid "Heading 1"
+#~ msgstr "शीर्षक 1"
+
+#~ msgid "Heading 2"
+#~ msgstr "शीर्षक 1"
+
+#~ msgid "Heading 3"
+#~ msgstr "शीर्षक 3"
+
+#~ msgid "Skiksha Ki Kiran"
+#~ msgstr "शिक्षा की किरण"
+
+#~ msgid "Crop Safety"
+#~ msgstr "फसल की सुरक्षा"
+
+#~ msgid "Go Green"
+#~ msgstr "पर्यावरण के अनुकूल बनें"
+
+#~ msgid "Making Government schemes easily accessible."
+#~ msgstr "सरकारी योजनाओं को आसानी से सुलभ बनाना।"
+
+#~ msgid "Mission"
+#~ msgstr "विशेष कार्य"
+
+#~ msgid "Tourism"
+#~ msgstr "पर्यटन"

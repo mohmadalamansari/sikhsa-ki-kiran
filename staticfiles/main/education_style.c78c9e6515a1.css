@@ -1,0 +1,44 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+h3{
+  color: #343a40;
+  text-transform: uppercase;
+}
+
+.footer-logo{
+  background-color: black;
+  padding: 7px 15px 0;
+  text-align: center;
+}
+.footer-logo ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-logo li{
+  display: inline-block;
+  padding: 0 10px;
+  margin-bottom: 7px;
+  vertical-align: middle;
+  list-style: none;
+}
+
+.sub-sites-footer{
+  background-color: #464646;
+  padding: 15px 10px 5px;
+  text-align: center;
+}
+.sub-sites-footer ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+.sub-sites-footer li{
+  display: inline-block;
+  padding: 0 10px;
+  margin-bottom: 7px;
+  vertical-align: middle;
+  list-style: none;
+}

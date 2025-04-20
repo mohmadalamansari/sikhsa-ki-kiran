@@ -1,0 +1,132 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.hero{
+  background: url(https://www.agdelta.com/wp-content/uploads/2018/06/website-parallax-background-C.jpg);
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+  text-align:center; 
+  position:relative;
+  width: 100%;
+}
+
+.icon__fallback-text{
+  position:absolute !important;
+  overflow:hidden;
+  clip:rect(0 0 0 0);
+  height:1px;
+  width:1px;
+  margin:-1px;
+  padding:0;
+  border:0
+}
+
+.icon{
+  display:inline-block;
+  width:65px;
+  height:65px;
+  vertical-align:middle;
+  fill:currentColor
+}
+
+
+.social-icons__link{
+  display:block;padding:0 3px
+}
+.bg-grey {
+  background-color: #f9f9f9;
+}
+
+.jumbotron {
+  background-color: #343a40;
+  color: #fff;
+  padding: 100px 25px;
+}
+
+.card-img-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.card-img-wrap:after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255,255,255,0.3);
+  opacity: 0;
+  transition: opacity .25s;
+}
+.card-img-wrap img {
+  transition: transform .25s;
+  width: 100%;
+}
+.card-img-wrap:hover img {
+  transform: scale(1.2);
+}
+.card-img-wrap:hover:after {
+  opacity: 1;
+}
+
+
+.carousel img {
+    max-height: 435px;
+    margin: 0 auto;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.btn{
+  border-radius: 20px;
+}
+.form-control{
+  border-radius: 20px;
+}
+
+h1,h2,h3,h4,h5,h6{
+
+  text-transform: uppercase;
+}
+
+.slider{
+  font-size: 1.3rem;
+}
+
+.footer-logo{
+  background-color: black;
+  padding: 7px 15px 0;
+  text-align: center;
+}
+.footer-logo ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-logo li{
+  display: inline-block;
+  padding: 0 10px;
+  margin-bottom: 7px;
+  vertical-align: middle;
+  list-style: none;
+}
+
+.sub-sites-footer{
+  background-color: #464646;
+  padding: 15px 10px 5px;
+  text-align: center;
+}
+.sub-sites-footer ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+.sub-sites-footer li{
+  display: inline-block;
+  padding: 0 10px;
+  margin-bottom: 7px;
+  vertical-align: middle;
+  list-style: none;
+}

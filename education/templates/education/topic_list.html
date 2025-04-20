@@ -1,0 +1,42 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %}{% trans "Education" %}{% endblock title %}
+{% block body %}
+{% get_current_language as language_code %}
+		<div class="jumbotron text-center" style="margin-top: 65px;">
+			<a href="{% url 'subject-list' %}" style="text-transform: uppercase;color: white;" class="display-3">
+			{% if language_code == 'hi' %}
+			{{ object_list.0.subject.subject_name_hindi }}
+			{% else %}
+			{{ object_list.0.subject.subject_name }}
+			{% endif %}
+			</a>			
+		<br><br>
+	</div>
+	<div class="container">
+		<div class="row">
+				{% for topic in object_list %}
+					<div class="col-sm-4">
+						<div class="card text-center">
+							<div class="card-img-wrap">
+			        			<img src={{ topic.topic_image.url }} style="height:300px;" class="card-img-top" alt="{{topic.topic_name}}">
+			        		</div>
+						  <div class="card-body">
+						    <h5 class="card-title">
+						    	{% if language_code == 'hi' %}
+								{{ topic.topic_name_hindi }}
+								{% else %}
+								{{ topic.topic_name }}
+								{% endif %}
+							</h5>
+						    <a href="{% url 'video-list' topic.subject.subject_name topic.topic_name %}" class="btn btn-outline-primary">{% trans "Click Here" %}</a>
+						  </div>
+						</div>
+					</div>
+					<br>
+					<br>
+				{% endfor %}
+			</div>
+		</div>
+{% endblock body %}

@@ -1,0 +1,39 @@
+{% extends 'users/base.html' %}
+{% load crispy_forms_tags %}
+{% load i18n %}
+{% block head %}
+	<style type="text/css">
+		.footer{
+			position: fixed;
+			bottom:0;
+			width: 100%
+		}
+	</style>
+{%endblock head %}
+{% block title %}{% trans "Log In" %}{% endblock title%}
+{% block body %}
+  	
+	<br>
+	<div class=" container border content-section">
+		<form method="POST">
+			{% csrf_token %}
+			<fieldset class="form-group">
+				<legend class="border-bottom md-4 ">{% trans "Log In" %}</legend>
+				{{ form|crispy }}
+			</fieldset><div class="form-group">
+				<button class="btn btn-outline-info" type="submit">{% trans "Log In" %}</button>
+				<small>
+					<a href="{% url 'password_reset' %}" class="ml = 1">{% trans "Forgot Password?" %}</a>
+				</small>
+			</div>
+		</form>
+		<div class="border-top pt-3">
+			<small class="text-muted">
+				{% trans "Need an account?" %}"
+				<a class="ml-2" href="{% url 'register' %}">{% trans "Register" %}</a>
+			</small><br><br>
+		</div>
+	</div>
+	<br>
+
+{% endblock body %}

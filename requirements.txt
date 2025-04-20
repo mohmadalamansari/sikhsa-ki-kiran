@@ -1,0 +1,18 @@
+certifi
+chardet
+django
+django-crispy-forms
+idna
+pillow
+pytz
+requests
+urllib3
+bootstrap4
+crispy-bootstrap4
+django-bootstrap4
+# django-heroku
+whitenoise
+gunicorn
+django-makemessages-xgettext
+dj-database-url 
+psycopg2

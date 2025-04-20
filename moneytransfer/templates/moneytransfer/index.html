@@ -1,0 +1,64 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% load i18n %}
+{% get_current_language as language_code %}
+{% block title %}{% trans "Money Transfer" %}{% endblock title %}
+{% block body %}
+  <script>
+    $('#myUrl').keyup(function(e) {
+      if (this.value.length < 7) {
+        this.value = 'http://';
+      } else if (this.value.indexOf('₹') !== 0) {
+        this.value = '₹' + String.fromCharCode(e.which);
+      }
+    });
+  </script>
+
+  <section style="margin-top: 90px;" >
+    <div class="container">
+      <h2 class="text-center">{% trans "Enter Receiver Account Details" %}</h2>
+      <br>
+      <div class="row">
+        <div class="col-md-4">
+          <div>
+            <img src="{% static 'moneytransfer/images/transfer.png' %}">
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div>
+            <form>
+              <div class="form-group">
+                <label for="myUrl">{% trans "Amount" %}</label>
+                <input class="form-control" value="₹" id="myUrl" type="tel" name="number" required>
+              </div>
+              <div class="form-group">
+                <label>{% trans "IFSC Code" %}</label>
+                <input class="form-control" type="tel" name="number" required>
+              </div>
+              <div class="form-group">
+                <label>{% trans "Account number" %}</label>
+                <input class="form-control" type="tel" name="number" required>
+              </div>
+              <div class="form-group">
+                <label>{% trans "Confirm Account number" %}</label>
+                <input class="form-control" type="tel" name="number" required>
+              </div>
+              <div class="form-group">
+                <label>{% trans "Account holder name" %}</label>
+                <input class="form-control" type="text" name="cvc" required>
+              </div>
+              <div class="form-group">
+                <label>{% trans "Phone Number (Optional)" %}</label>
+                <input class="form-control" type="tel" name="number" required>
+              </div>
+              <br>
+              <div class="text-center form-group">
+                <a href="{% url 'checkout' %}" class="btn btn-lg btn-primary" fit>{% trans "Transfer Now" %}</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock body %}

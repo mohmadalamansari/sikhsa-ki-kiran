@@ -1,0 +1,128 @@
+{% load static  %}
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% trans "Card Details" %}</title>
+    <meta name="viewport" content="initial-scale=1">
+    <!-- CSS is included through the card.js script -->
+    <link rel="stylesheet" href="{% static 'moneytransfer/style.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <style>
+        .demo-container {
+            width: 100%;
+            max-width: 350px;
+            margin: 50px auto;
+        }
+
+        form {
+            margin: 30px;
+        }
+        
+
+    </style>
+    <div class="demo-container">
+        <div class="card-wrapper"></div>
+
+        <div class="form-container active">
+            <form>
+      
+      
+      <div class="group">      
+      <input  type="tel" name="number" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>{% trans "Card number" %}</label>
+    </div>     
+  
+  <div class="group">      
+      <input  type="text" name="name" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>{% trans "Full name" %}</label>
+    </div>     
+  
+  <div class="group">      
+      <input type="tel" name="expiry" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>{% trans "MM/YY" %}</label>
+    </div>     
+  
+  <div class="group">      
+      <input type="number" name="cvc" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>{% trans "CVC/CVV" %}</label>
+    </div>     
+              
+    <div class="button raised blue">
+       <a id="redirect" onclick="DelayRedirect()"  class="center" fit>{% trans "Checkout Now" %}</a>
+      <paper-ripple fit></paper-ripple>
+    </div>
+  
+   <div class="button raised narrow">
+      <a style="color:#000;" id="redirect2" onclick="DelayRedirect2()" class="center" fit><img width="80" src="{% static 'moneytransfer/images/paytm.png' %}"/></a>
+      <paper-ripple fit></paper-ripple>
+    </div>
+        
+            </form>
+        </div>
+    </div>
+
+    <script src="{% static 'moneytransfer/card.js' %}"></script>
+    <script>
+        new Card({
+            form: document.querySelector('form'),
+            container: '.card-wrapper'
+        });
+    
+    
+        
+    function DelayRedirect() {
+          var redirect_icon = '<i class="fa fa-circle-o-notch fa-spin"></i>';
+            document.getElementById("redirect").innerHTML = redirect_icon;
+
+    
+    
+
+    var seconds = 5;
+    var dvCountDown = document.getElementById("dvCountDown");
+    var lblCount = document.getElementById("lblCount");
+
+    setInterval(function () {
+        seconds--;
+
+        if (seconds == 0) {
+
+            window.location = "{% url 'bank-page' %}";
+        }
+    }, 1000);
+}
+
+function DelayRedirect2() {
+          var redirect_icon = '<i class="fa fa-circle-o-notch fa-spin"></i>';
+            document.getElementById("redirect2").innerHTML = redirect_icon;
+
+    
+    
+
+    var seconds = 5;
+    var dvCountDown = document.getElementById("dvCountDown");
+    var lblCount = document.getElementById("lblCount");
+
+    setInterval(function () {
+        seconds--;
+
+        if (seconds == 0) {
+
+            window.location = "{% url 'paytm-bank-page' %}";
+        }
+    }, 1000);
+}
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{% extends 'main/base.html' %}
+{% load static i18n %}
+{% block  title %}{% trans "Issues Being Addressed" %}{% endblock %}
+{% block body %}
+	<div class="container" style="margin-top: 90px;">
+		<h3>{% trans "Issues being addressed" %}</h3>
+		<br>
+		<ul>
+			<li>{% trans "Lack of Digital Knowledge" %}</li>
+			<li>{% trans "Farmers have less easier & portable ways to access or use various schemes for them" %}</li>
+			<li>{% trans "Every year a lot of crops is spoiled due to late or inaccurate weather information" %}</li>
+			<li>{% trans "Citizens with less knowledge or resources, waste a lot of time in queues to access or apply for any government schemes" %}</li>
+		</ul>
+	</div>
+{% endblock %}

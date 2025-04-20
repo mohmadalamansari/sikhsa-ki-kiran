@@ -1,0 +1,61 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Google font link -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href={% static 'users/base.css' %}>
+  
+  <!-- dyanmic css passed by page -->
+  {% block head%}{% endblock head %}
+
+  <title>{% block title %}{% trans "Shiksha Ki Kiran" %}{% endblock title%}</title>
+  <link rel="icon" type="image/ico" href="{% static 'main/images/logo.png' %}" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-nav navbar navbar-dark bg-dark">
+    <a class="navbar-brand center" href="{% url 'main-index' %}">
+      <img src={% static 'users/images/logo.png' %} width="65" height="40" class="d-inline-block align-top" alt="Logo">
+      {% trans "Shiksha Ki Kiran" %}
+    </a>
+  </nav>
+
+  {% if messages %}
+    {% for message in messages %}
+      <div class="alert alert-{{message.tags}}">
+        {{ message }}
+      </div>
+    {% endfor %}
+  {% endif %}
+  
+  {% block body %}
+  {% endblock body %}
+
+  <!-- footer -->
+  <div class="footer text-center">
+    <a href='#' title="Shiksha Ki Kiran">
+      <img src={% static 'users/images/logo.png' %} height="80" width="130" alt="">
+    </a>
+    <br>
+    <div id="techtitans"><small>{% trans "Shiksha Ki Kiran platform is designed, developed and mantained by TechTitans," %}</small></div>
+    <div id="collegeName"><small>{% trans "Hindu College of Engineering, Sonipat" %}</small></div>
+  </div>
+
+   <!-- Bootstrap JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

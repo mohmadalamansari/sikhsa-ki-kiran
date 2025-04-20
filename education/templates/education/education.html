@@ -1,0 +1,232 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% load i18n %}
+{% get_current_language as language_code %}
+{% block title %}{% trans "Education" %}{% endblock title %}
+
+{% block head %}
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<style>
+  .jumbotron {
+    height: 400px;
+    background: url("{% static 'education/images/background.jpg' %}") no-repeat center center;
+    background-size: cover;
+    color: white;
+    margin-top: 65px;
+  }
+  .statechange {
+    font-size: 6vw;
+    color: #4d575f;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+  }
+  .statechange:hover {
+    color: #00adbc;
+  }
+  .video-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  .video-card {
+    flex: 0 0 auto;
+    width: 300px;
+    scroll-snap-align: start;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  .video-card:hover {
+    transform: scale(1.05);
+  }
+  .video-frame {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 10px 10px 0 0;
+  }
+  .video-title {
+    padding: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+</style>
+{% endblock head %}
+
+{% block body %}
+
+<!-- Jumbotron -->
+<div class="conatiner" style="margin-top: 65px;">
+  <div class="jumbotron text-center">
+    <p style="font-size: 3vw;">{% trans "What will you create?" %}</p>
+    <a href="#courses" style="padding-left: 3vw; padding-right: 3vw; color: white; font-size: 1.5vw;" class="btn btn-warning">{% trans "Start Learning" %}</a> <br>
+    <a style="color: white; font-size: 1.5vw;" href="#myModal" class="btn" data-toggle="modal">
+      <i class="fa fa-play-circle fa-1x mb-3"></i>
+      {% trans "Watch The Video" %}
+    </a>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body">
+        <iframe width="465" height="550" src="https://www.youtube.com/embed/nKIu9yen5nc" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 🎥 Video Scroll Section -->
+<div class="container">
+  <h2 class="text-center" style="color: #00adbc;">{% trans "Featured Videos" %}</h2>
+  <div class="video-scroll-container">
+    <!-- Science -->
+    <div class="video-card">
+      <iframe class="video-frame" src="https://www.youtube.com/embed/n4tgkyUBkbY" allowfullscreen></iframe>
+      <div class="video-title">What is Matter? - Science</div>
+    </div>
+    <div class="video-card">
+      <iframe class="video-frame" src="https://www.youtube.com/embed/1ZGSQqg4MYE" allowfullscreen></iframe>
+      <div class="video-title">Introduction to Atoms</div>
+    </div>
+  
+    <!-- Computing -->
+    <div class="video-card">
+      <iframe class="video-frame" src="https://www.youtube.com/embed/8mAITcNt710" allowfullscreen></iframe>
+      <div class="video-title">How Computers Work</div>
+    </div>
+    <div class="video-card">
+      <iframe class="video-frame" src="https://www.youtube.com/embed/zOjov-2OZ0E" allowfullscreen></iframe>
+      <div class="video-title">Intro to Programming - CS50</div>
+    </div>
+  
+    <!-- Economics -->
+    <div class="video-card">
+      <iframe class="video-frame" src="https://www.youtube.com/embed/3ez10ADR_gM" allowfullscreen></iframe>
+      <div class="video-title">What is Economics?</div>
+    </div>
+    <div class="video-card">
+      <iframe class="video-frame" src="https://www.youtube.com/embed/GPOv72Awo68" allowfullscreen></iframe>
+      <div class="video-title">Supply and Demand Explained</div>
+    </div>
+  
+    <!-- Math -->
+    <div class="video-card">
+      <iframe class="video-frame" src="https://www.youtube.com/embed/XZ5_p-2fJ4w" allowfullscreen></iframe>
+      <div class="video-title">Algebra Basics</div>
+    </div>
+    <div class="video-card">
+      <iframe class="video-frame" src="https://www.youtube.com/embed/qgVFkRn8f10" allowfullscreen></iframe>
+      <div class="video-title">What is a Function?</div>
+    </div>
+  
+    <!-- Arts -->
+    <div class="video-card">
+      <iframe class="video-frame" src="https://www.youtube.com/embed/e1aXKMLp398" allowfullscreen></iframe>
+      <div class="video-title">Intro to Art History</div>
+    </div>
+    <div class="video-card">
+      <iframe class="video-frame" src="https://www.youtube.com/embed/jmN1fgiHk8U" allowfullscreen></iframe>
+      <div class="video-title">Understanding Colors in Art</div>
+    </div>
+  </div>
+</div>
+
+<!-- Stats Section -->
+<div class="container-fluid">
+  <h4 class="text-center" style="color: #00adbc;">{% trans "We're making a difference" %}</h4>
+  <br>
+  <div class="row">
+    <div class="col-sm">
+      <h1 class="statechange text-center">{% trans "10M" %}</h1>
+      <p class="text-center">{% trans "is the total rural population of India." %}</p>
+    </div>
+    <div class="col-sm">
+      <h1 class="statechange text-center">{% trans "635M" %}</h1>
+      <p class="text-center">{% trans "of our students belongs to rural areas." %}</p>
+    </div>
+    <div class="col-sm">
+      <h1 class="statechange text-center">89.4%</h1>
+      <p class="text-center">{% trans "students of rural areas don't know how to operate computers." %}</p>
+    </div>
+  </div>
+</div>
+<br>
+
+<!-- Courses Section -->
+<h2 id="courses" style="color: #4d575f; font-weight: 900;" class="text-center">{% trans "Courses" %}</h2>
+<br>
+
+<!-- Subjects Cards -->
+<div class="container">
+  <div class="row">
+    {% for subject in object_list %}
+    <div class="col-sm-4">
+      <div class="card text-center">
+        <div class="card-img-wrap">
+          <img src={{ subject.subject_image.url }} style="height:300px;" class="card-img-top" alt="{{subject.subject_name}}">
+        </div>
+        <div class="card-body">
+          {% if language_code == 'hi' %}
+          <h5 class="card-title">{{subject.subject_name_hindi}}</h5>
+          {% else %}
+          <h5 class="card-title">{{subject.subject_name}}</h5>
+          {% endif %}
+          <a href="{% url 'topic-list' subject.subject_name %}" class="btn btn-outline-success">{% trans "Click Here" %}</a>
+        </div>
+      </div>
+      <br>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+<br>
+
+<!-- Carousel/Slider -->
+<div class="slider">
+  <div id="carouselCaptions" class="carousel slide" data-keyboard='true' data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselCaptions" data-slide-to="2"></li>
+      <li data-target="#carouselCaptions" data-slide-to="3"></li>
+      <li data-target="#carouselCaptions" data-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src={% static 'education/images/science.png' %} class="d-block w-100" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src={% static 'education/images/computing.jpg' %} class="d-block w-100" alt="Computing">
+      </div>
+      <div class="carousel-item">
+        <img src={% static 'education/images/Economics&finance.png' %} class="d-block w-100" alt="Economics&Finance">
+      </div>
+      <div class="carousel-item">
+        <img src={% static 'education/images/math.jpg' %} class="d-block w-100" alt="Math">
+      </div>
+      <div class="carousel-item">
+        <img src={% static 'education/images/Arts&Humanities1.jpg' %} class="d-block w-100" alt="Arts&Humanities">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+{% endblock body %}

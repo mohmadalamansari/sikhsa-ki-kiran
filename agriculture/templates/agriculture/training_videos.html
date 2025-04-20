@@ -1,0 +1,26 @@
+{% load i18n %}  <!-- Load the translation tags -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% trans "Training Videos" %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4">{% trans "Training Videos" %}</h1>
+        <ul class="list-group mt-3">
+            {% for video in videos %}
+                <li class="list-group-item">
+                    <h5>{{ video.title }}</h5>
+                    <p>{{ video.description }}</p>
+                    <iframe width="560" height="315" src="{{ video.url }}" frameborder="0" allowfullscreen></iframe>
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="{% url 'agriculture' %}" class="btn btn-primary mt-4">{% trans "Back to Home" %}</a>
+    </div>
+</body>
+</html>

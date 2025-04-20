@@ -1,0 +1,220 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+{% block head %}
+  <style>
+
+    .vertical-center {
+      margin: 0;
+      position: absolute;
+      top: 70%;
+      left: 30%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    .jumbotron{
+      height: 300px;
+      background: url("{% static 'weather/images/weather.jpg' %}") no-repeat center center;
+      background-size: cover;
+      color: white;
+      margin-top: 65px;
+    }
+  </style>
+{% endblock head %}
+{% block title %}{% trans "Weather Forecast" %}{% endblock title %}
+{% block body %}
+
+  <!-- Jumbotron -->
+  <div class="jumbotron jumbotron-fluid text-center">
+    <div class="container-fluid">
+      <h1 class="display-4">{% trans "Weather Forecast" %}</h1>
+    </div>
+  </div>
+
+<!-- City Input Form -->
+  <section class='container'>
+    <form method="POST">
+      {% csrf_token %}
+      <div  class="input-group-append">
+        {{ form.name}}
+        <button class="btn btn-primary" type="submit">{% trans "Search" %}</button>
+      </div>
+    </form>
+  </section>
+  <br>
+
+  <div class="container-fluid">
+    <h3>Recent Views:</h3>
+    <br>
+    <div class="row justify-content-around">
+      <div class="col-md-3" style="height:430px;
+      border:1px;
+      solid #ccc;
+      overflow:auto;">        
+        <section>
+          {%for city_weather in weather_data reversed%}
+          <div class="card border-dark mb-3" >
+            <div class="card-header">
+            <img src="http://openweathermap.org/img/w/{{ city_weather.icon1 }}.png" alt="Image">
+            <span class="title" style="font-weight: bold;font-size: 150%"><h3>{{ city_weather.city }}</h3></span>
+            </div>
+            <div class="card-body text-dark">
+              <div class="card-title">
+                 <h5>{{ city_weather.temperature }}°C</h5>
+              </div>
+              <p class="card-text">
+                <div class="row">
+                  <div class="col">
+                    {{ city_weather.description }}
+                  </div>
+                </div>
+              </p>
+            </div>
+          </div>
+          <br>
+          {%endfor%}
+        </section>
+      </div>
+      <div class="col-md-7">
+        <div class="card border-dark mb-3" >
+          <div class="card-header">
+          <img src="http://openweathermap.org/img/w/{{ city_weather.icon }}.png" alt="Image">
+          <h3 class="title" style="font-weight: bold;font-size: 150%">{{ city_weather.city }}</h3>
+          </div>
+          <div class="card-body text-dark">
+            <h3 class="card-title">
+               {% trans "Temperature" %}:{{ city_weather.temperature }}°C
+            </h3>
+            <p class="card-text">
+              <div class="row">
+                <div class="col">
+                  <h4>{% trans "Description" %}:</h4>{{ city_weather.description }}
+                  <br><br>
+                  <h4>{% trans "Pressure" %}:</h4>{{ city_weather.pressure }} hpa
+                </div>
+               <div class="col">
+                  <h4>{% trans "Wind" %}:</h4>{{city_weather.wind}} m/s
+                  <h4>{% trans "Humidity" %}:</h4>{{city_weather.humidity}} %
+                  <h4>{% trans "Cloud" %}:</h4>{{city_weather.cloud}}
+                  <h4>{% trans "Temp Max" %}:</h4>{{city_weather.max}} °C
+                </div>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <br>
+  <!-- 5 days forecase -->
+  <div class="container-fluid">
+  <h3 class="text-center">{% trans "5-Day Weather Forecast" %}</h3>
+  <br>
+  <div class="card-deck">
+    <div class="card border-dark mb-3" >
+      <div class="card-header">
+      <img src="http://openweathermap.org/img/w/{{ city_weather.icon1 }}.png" alt="Image">
+      <span class="title" style="font-weight: bold;font-size: 150%"><h3>{{ city_weather.date1 }}</h3></span>
+      </div>
+      <div class="card-body text-dark">
+        <div class="card-title">
+           <h5>{{ city_weather.city1 }}</h5>
+           <h5>{{ city_weather.temperature1 }}°C</h5>
+        </div>
+        <p class="card-text">
+          <div class="row">
+            <div class="col">
+              <h5>{% trans "Description" %}:</h5> {{ city_weather.description1 }}
+              <h5>{% trans "Pressure" %}:</h5> {{ city_weather.pressure1 }} hpa
+            </div>
+          </div>
+        </p>
+      </div>
+    </div> 
+    
+    <div class="card border-dark mb-3" >
+      <div class="card-header">
+      <img src="http://openweathermap.org/img/w/{{ city_weather.icon12 }}.png" alt="Image">
+      <span class="title" style="font-weight: bold;font-size: 150%"><h3>{{ city_weather.date12 }}</h3></span>
+      </div>
+      <div class="card-body text-dark">
+        <div class="card-title">
+           <h5>{{ city_weather.city12 }}</h5>
+           <h5>{{ city_weather.temperature12 }}°C</h5>
+        </div>
+        <p class="card-text">
+          <div class="row">
+            <div class="col">
+              <h5>Description:</h5> {{ city_weather.description12 }}
+              <h5>Pressure:</h5> {{ city_weather.pressure12 }} hpa
+            </div>
+          </div>
+        </p>
+      </div>
+    </div>
+    <div class="card border-dark mb-3" >
+      <div class="card-header">
+      <img src="http://openweathermap.org/img/w/{{ city_weather.icon18 }}.png" alt="Image">
+      <span class="title" style="font-weight: bold;font-size: 150%"><h3>{{ city_weather.date18 }}</h3></span>
+      </div>
+      <div class="card-body text-dark">
+        <div class="card-title">
+           <h5>{{ city_weather.city18 }}</h5>
+           <h5>{{ city_weather.temperature18 }}°C</h5>
+        </div>
+        <p class="card-text">
+          <div class="row">
+            <div class="col">
+              <h5>{% trans "Description" %}:</h5> {{ city_weather.description18 }}
+              <h5>{% trans "Pressure" %}:</h5> {{ city_weather.pressure18 }} hpa
+            </div>
+          </div>
+        </p>
+      </div>
+    </div>
+    <div class="card border-dark mb-3" >
+      <div class="card-header">
+      <img src="http://openweathermap.org/img/w/{{ city_weather.icon24 }}.png" alt="Image">
+      <span class="title" style="font-weight: bold;font-size: 150%"><h3>{{ city_weather.date24 }}</h3></span>
+      </div>
+      <div class="card-body text-dark">
+        <div class="card-title">
+           <h5>{{ city_weather.city24 }}</h5>
+           <h5>{{ city_weather.temperature24 }}°C</h5>
+        </div>
+        <p class="card-text">
+          <div class="row">
+            <div class="col">
+              <h5>{% trans "Description" %}:</h5> {{ city_weather.description24 }}
+              <h5>{% trans "Pressure" %}:</h5> {{ city_weather.pressure24 }} hpa
+            </div>
+          </div>
+        </p>
+      </div>
+    </div>
+    <div class="card border-dark mb-3" >
+      <div class="card-header">
+      <img src="http://openweathermap.org/img/w/{{ city_weather.icon36 }}.png" alt="Image">
+      <span class="title" style="font-weight: bold;font-size: 150%"><h3>{{ city_weather.date36 }}</h3></span>
+      </div>
+      <div class="card-body text-dark">
+        <div class="card-title">
+           <h5>{{ city_weather.city36 }}</h5>
+           <h5>{{ city_weather.temperature36 }}°C</h5>
+        </div>
+        <p class="card-text">
+          <div class="row">
+            <div class="col">
+              <h5>{% trans "Description" %}:</h5> {{ city_weather.description36 }}
+              <h5>{% trans "Pressure" %}:</h5> {{ city_weather.pressure36 }} hpa
+            </div>
+          </div>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock body %}

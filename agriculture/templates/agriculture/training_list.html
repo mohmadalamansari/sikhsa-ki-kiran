@@ -1,0 +1,38 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %}{% trans "Agriculture" %}{% endblock title %}
+
+{% block head %}
+<script type="text/javascript">
+    function changesrc(ifrm, href) {
+        document.getElementById(ifrm).setAttribute('src', href);
+    }
+</script>
+{% endblock head %}
+
+{% block body %}
+<div class="container-fluid" style="margin-top: 80px;">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe id="ifrm" class="embed-responsive-item" src="{{ object_list.0.url }}" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="col-md-3 border" style="height: 552.23px; width: 337.25px;">
+            <br>
+            <h4>{% trans "Training Topics" %}</h4>
+            <br>
+            {% for video in object_list %}
+                <a style="color: green" href="{{ video.url }}" onclick="changesrc('ifrm', '{{ video.url }}'); return false" class="btn d-block">
+                    {% if language_code == 'hi' %}
+                    {{ video.video_title_hindi }}
+                    {% else %}
+                    {{ video.video_title }}
+                    {% endif %}
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock body %}
